@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Tue, 15 Aug 2023 18:01:33 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[kubectl dump]]></title>
+            <guid>ba9f3116013d4160857fd7c4cd0415a2</guid>
+            <pubDate>Tue, 15 Aug 2023 15:23:31 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Dump cluster information out suitable for debugging and diagnosing cluster problems. By default, dumps everything to stdout. You can optionally specify a directory with --output-directory. If you specify a directory, Kubernetes will build a set of files in that directory. By default, only dumps things in the current namespace and 'kube-system' namespace, but you can switch to a different namespace with the --namespaces flag, or specify --all-namespaces to dump all namespaces.</p>
+<p>The command also dumps the logs of all of the pods in the cluster; these logs are dumped into different directories based on namespace and pod name.</p>
+<h3 id="usage">Usage</h3>
+<p><code>$ kubectl cluster-info dump</code></p>
+<h3 id="flags">Flags</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Shorthand</th>
+<th>Default</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all-namespaces</td>
+<td>A</td>
+<td>false</td>
+<td>If true, dump all namespaces. If true, --namespaces is ignored.</td>
+</tr>
+<tr>
+<td>allow-missing-template-keys</td>
+<td></td>
+<td>true</td>
+<td>If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.</td>
+</tr>
+<tr>
+<td>namespaces</td>
+<td></td>
+<td>[]</td>
+<td>A comma separated list of namespaces to dump.</td>
+</tr>
+<tr>
+<td>output</td>
+<td>o</td>
+<td>json</td>
+<td>Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-as-json|jsonpath-file.</td>
+</tr>
+<tr>
+<td>output-directory</td>
+<td></td>
+<td></td>
+<td>Where to output the files. If empty or '-' uses stdout, otherwise creates a directory hierarchy in that directory</td>
+</tr>
+<tr>
+<td>pod-running-timeout</td>
+<td></td>
+<td>20s</td>
+<td>The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running</td>
+</tr>
+<tr>
+<td>show-managed-fields</td>
+<td></td>
+<td>false</td>
+<td>If true, keep the managedFields when printing objects in JSON or YAML format.</td>
+</tr>
+<tr>
+<td>template</td>
+<td></td>
+<td></td>
+<td>Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [[[<a title="http://golang.org/pkg/text/template/#pkg-overview" href="http://golang.org/pkg/text/template/#pkg-overview">http://golang.org/pkg/text/template/#pkg-overview</a>](<a title="http://golang.org/pkg/text/template/#pkg-overview%5C" href="http://golang.org/pkg/text/template/#pkg-overview%5C">http://golang.org/pkg/text/template/#pkg-overview\</a>)]([<a title="http://golang.org/pkg/text/template/#pkg-overview" href="http://golang.org/pkg/text/template/#pkg-overview">http://golang.org/pkg/text/template/#pkg-overview</a>](<a title="http://golang.org/pkg/text/template/#pkg-overview%5C" href="http://golang.org/pkg/text/template/#pkg-overview%5C">http://golang.org/pkg/text/template/#pkg-overview\</a>))].</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Dump current cluster state to stdout</p>
+</blockquote>
+<div><pre class="hljs"><code><span class="hljs-attribute">kubectl</span> cluster-<span class="hljs-literal">info</span> dump </code></pre></div>
+<blockquote>
+<p>Dump current cluster state to /path/to/cluster-state</p>
+</blockquote>
+<div><pre class="hljs"><code>kubectl cluster-<span class="hljs-built_in">info</span> dump <span class="hljs-attribute">--output-directory</span>=/path/to/cluster-state </code></pre></div>
+<blockquote>
+<p>Dump all namespaces to stdout</p>
+</blockquote>
+<div><pre class="hljs"><code>kubectl <span class="hljs-keyword">cluster</span>-<span class="hljs-keyword">info</span> dump <span class="hljs-comment">--all-namespaces</span></code></pre></div>
+<blockquote>
+<p>Dump a set of namespaces to /path/to/cluster-state</p>
+</blockquote>
+<div><pre class="hljs"><code>kubectl cluster-info <span class="hljs-keyword">dump</span> --namespaces <span class="hljs-keyword">default</span>,kube-system --output-directory=<span class="hljs-regexp">/path/</span>to/cluster-state</code></pre></div>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Handshakes and Crioptography]]></title>
+            <guid>dc5fa6ef696146238f394c06d6a6555d</guid>
+            <pubDate>Tue, 04 May 2021 15:45:19 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Simetric key criptography, same key is used to cript and uncript data</p>
+<p>Public Key Cryptography uses Asimmetric key that means it has two keys, public and private.</p>
+<p>Data encrypted with public key can only be decrypted using private key</p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
